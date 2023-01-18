@@ -1,0 +1,15 @@
+{
+  "name": "sub-package",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "ts-node": "my-ts-node-cli Hi",
+    "tsx": "my-tsx-cli Hi",
+    "tsm": "my-tsm-cli Hi"
+  },
+  "dependencies": {
+    "ts-interpreters": "../ts-interpreters-0.1.0.tgz"
+  },
+  "author": "Kræn Hansen <mail@kraenhansen.dk>",
+  "license": "ISC"
+}

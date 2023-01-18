@@ -1,0 +1,47 @@
+{
+  "name": "ts-interpreters",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Playground for TypeScript interpreters",
+  "type": "module",
+  "scripts": {
+    "ts-node": "ts-node-esm index.ts",
+    "tsm": "tsm index.ts",
+    "tsx": "tsx index.ts",
+    "my-ts-node-cli": "./my-ts-node-cli.ts",
+    "my-tsm-cli": "./my-tsm-cli.ts",
+    "my-tsx-cli": "./my-tsx-cli.ts",
+    "mocha-ts-node": "mocha --node-option loader=ts-node/esm *.test.ts",
+    "mocha-tsx": "mocha --node-option loader=tsx *.test.ts",
+    "mocha-tsm": "mocha --node-option loader=tsm *.test.ts",
+    "mocha-tsm-source-maps": "mocha --node-option loader=tsm,enable-source-maps *.test.ts",
+    "clean": "rm -rf node_modules sub-package/node_modules sub-package/package-lock.json"
+  },
+  "bin": {
+    "my-ts-node-cli": "./my-ts-node-cli.ts",
+    "my-tsm-cli": "./my-tsm-cli.ts",
+    "my-tsx-cli": "./my-tsx-cli.ts"
+  },
+  "dependencies": {
+    "@types/mocha": "^10.0.1",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
+    "tsm": "^2.3.0",
+    "tsx": "^3.12.2"
+  },
+  "files": [
+    "*.ts",
+    "*.tsm",
+    "*.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kraenhansen/ts-interpreters.git"
+  },
+  "author": "Kræn Hansen <mail@kraenhansen.dk>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kraenhansen/ts-interpreters/issues"
+  },
+  "homepage": "https://github.com/kraenhansen/ts-interpreters#readme"
+}
